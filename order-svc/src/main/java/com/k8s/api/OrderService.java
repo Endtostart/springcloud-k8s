@@ -26,7 +26,7 @@ public class OrderService {
 
     @GetMapping("callBack")
     public String callBack(@RequestParam("message") String message) {
-        return message + "\n订单服务 [" + profile + "]：==》callBack ok\n>>ip" + host;
+        return message + "\n订单服务 [" + profile + "]：==》callBack ok\n>>ip" + host + "\n";
     }
 
     static {
