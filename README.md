@@ -10,14 +10,17 @@
 <h4>3.服务集群访问入口，路由策略</h4></br>
   利用ingress 在集群内，侦测服务的变化，并约定路由规则。配置ingress-controller，这里</br>
 采用traefik，具体配置可以参考官网。</br>
-<h4>4.配置中心</h4></br>
+<h4>4.配置中心</h4>
   采用springcloud config作为配置中心</br>
-</br>
-<h3>如何构建：</h3></br>
+<h3>如何构建：</h3>
 前期准备：
   docker环境搭建,   
   kubeadm环境搭建,   
   traefik-ingres配置   
+<h3>一键构建</h3>
+<code>mvn clean package</code>
+<code>/bin/bash ./auto.sh</code>
+<h3>手动构建</h3>
 <h4>1.构建jar包</h4></br>
   config,order-svc,goods-svc三个服务</br>
 <h4>2.构建docker镜像</h4></br>
