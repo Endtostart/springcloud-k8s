@@ -18,8 +18,8 @@
   kubeadm环境搭建,   
   traefik-ingres配置   
 <h3>一键构建</h3>
-<code>mvn clean package</code>
-<code>/bin/bash ./auto.sh</code>
+  <code>mvn clean package</code></br>
+  <code>/bin/bash ./auto.sh</code>
 <h3>手动构建</h3>
 <h4>1.构建jar包</h4></br>
   config,order-svc,goods-svc三个服务</br>
