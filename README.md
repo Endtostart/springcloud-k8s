@@ -52,11 +52,11 @@
 对应traefik信息:</br>
 <code>traefik-ingress-service     NodePort      10.97.95.181      <none>          80:30255/TCP,8080:32640/TCP     3d6h</code></br>
 执行：<code>curl 10.97.95.181/order/pay</code></br>
-结果：</br><code>订单服务 [dev]：==》pay ok</br>
-         >>ip10.32.0.8</br>
+结果：</br>订单服务 [dev]：==》pay ok </br>
+         >>ip10.32.0.8 </br>
          商品服务 [dev]：==》use ok</br>
          >>ip10.32.0.9</br>
          订单服务 [dev]：==》callBack ok</br>
-         >>ip10.32.0.8</code>
+         >>ip10.32.0.8
     
 
