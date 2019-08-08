@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-svc
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/repo, classpath:/repo/goods-svc, classpath:/repo/order-svc # 本地配置
+# 从git读取配置
+#        git:
+#          uri: git@XXXXXX/repo.git
+#          searchPaths: /**
+#          password:
+#          username:
+server:
+  port: 8080
