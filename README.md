@@ -1,7 +1,7 @@
 <h2> What's it ?</h2>
 基于k8s构建和springcloud架构，构建微服务体系
 <h3>架构体系：</h3>
-<p4>1.负载和服务注册</p4>
+<h4>1.负载和服务注册</h4>
   基于k8s的 service和pod，pod为具体服务实例；service为调用pod入口，通过label选择pod，</br>
 并通过kube-proxy实现路由和负载。
 <h4>2.服务调用</h4>
