@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 @FeignClient(name = "goods",url = GoodsService.SERVICE_URL)
 public interface GoodsService {
 
-    String SERVICE_URL = "http://goods-svc.default.svc.cluster.local";
+    String SERVICE_URL = "http://goods-svc.default.svc.cluster.local:8080";
 
     @GetMapping("/goods/use")
     @ResponseBody

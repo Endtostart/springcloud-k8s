@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 @FeignClient(name="order",url = OrderService.SERVICE_URL)
 public interface OrderService {
 
-    String SERVICE_URL = "http://order-svc.default.svc.cluster.local";
+    String SERVICE_URL = "http://order-svc.default.svc.cluster.local:8080";
 
     @GetMapping("/order/callBack")
     @ResponseBody
