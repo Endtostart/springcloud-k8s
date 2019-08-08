@@ -15,9 +15,9 @@
 </br>
 <h3>如何构建：</h3></br>
 前期准备：
-  *docker环境搭建   
-  *kubeadm环境搭建   
-  *traefik-ingres配置   
+  docker环境搭建,   
+  kubeadm环境搭建,   
+  traefik-ingres配置   
 <h4>1.构建jar包</h4></br>
   config,order-svc,goods-svc三个服务</br>
 <h4>2.构建docker镜像</h4></br>
