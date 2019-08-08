@@ -33,5 +33,31 @@
 <h4>4.对外暴露服务，路由</h4>
   构建ingress </br>
   执行命令: <code>kubectl create -f _ingress.order.yaml_</code>
+<h3>测试：</h3>
+<h4>1.查看pods</h4>
+执行<code>kubectl get pods -o wide</code>
+可以查看到启动的实例和对应的vip
+<h4>2.查看service</h4>
+执行<code>ubectl get svc</code>
+可以查看服务列表和对应的端口</br>
+执行<code>kubectl get endpoints</code>
+可以查看服务名和负载到的实例
+<h4>3.查看路由 ingress</h4>
+执行<code>kubectl get</code>
+查看启用的路由信息</br>
+执行<code>kubectl get ing -o yaml</code>
+查看路由的详细信息,包含路由规则和关联到的service
+
+<h4>4.调用服务</h4>
+这里我的traefik-ingress的入口是 /order/pay</br>
+关联的服务是 order-svc</br>
+<code>traefik-ingress-service   NodePort    10.97.95.181    <none>        80:30255/TCP,8080:32640/TCP   3d6h</code></br>
+执行：<code>curl 10.97.95.181/order/pay</code></br>
+结果：</br><code>订单服务 [dev]：==》pay ok
+         >>ip10.32.0.8
+         商品服务 [dev]：==》use ok
+         >>ip10.32.0.9
+         订单服务 [dev]：==》callBack ok
+         >>ip10.32.0.8</code></br>
     
-    
+
