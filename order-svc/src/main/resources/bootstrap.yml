@@ -3,6 +3,6 @@ spring:
     name: order-svc
   cloud:
     config:
-      #uri: http://ordersvc.default.svc.cluster.local:8080
-      uri: http://127.0.0.1:8080
+      uri: http://config.default.svc.cluster.local:8080
+      #uri: http://127.0.0.1:8080
       profile: dev
