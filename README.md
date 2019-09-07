@@ -38,7 +38,7 @@
 执行<code>kubectl get pods -o wide</code>
 可以查看到启动的实例和对应的vip
 <h4>2.查看service</h4>
-执行<code>ubectl get svc</code>
+执行<code>kubectl get svc</code>
 可以查看服务列表和对应的端口</br>
 执行<code>kubectl get endpoints</code>
 可以查看服务名和负载到的实例
